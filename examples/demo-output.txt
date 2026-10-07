@@ -1,0 +1,35 @@
+$ dapraia show --plan examples/plan.json
+  atividade    futevôlei                            ← "futevôlei"
+               a partir das 6h                      ← "de manhã"
+               até as 9h                            ← "cedo"
+               vento até 15 km/h                    ← "pouco vento"
+               chance de chuva até 20%              ← "sem chuva"
+               maré baixa                           ← "maré baixa"
+               pelo menos 2h seguidas               ← "Pelo menos 2 horas"
+  não sei medir: "pra areia ficar firme"
+  lugar: Piratininga (-22.9553, -43.0809)
+  lugar: Itacoatiara (-22.9749, -43.0320)
+  ajuste da maré: +60 min
+
+$ dapraia --plan examples/plan.json --forecast-dir examples/forecast --why
+Dá praia amanhã (qua 07/10): Piratininga, das 6h às 9h. A maré baixa às 7h10 e o vento está bem fraco, então o céu encoberto não atrapalha nada.
+
+Piratininga · amanhã (qua 07/10) · onda e maré do ponto do modelo a 4,5 km
+  hora      vento km/h     chuva %   h da maré
+  6h    ✓           3           8         0,7 ◀
+  7h    ✓           4           5         0,3 ◀
+  8h    ✓           4           3         1,3 ◀
+  maré baixa às 7h10, maré cheia às 13h10, maré baixa às 19h30 (maré baixa: modelo +60 min, do seu plano)
+Previsão: Open-Meteo.com (CC BY 4.0). Onda e maré vêm de um modelo com grade de ~8 km: servem pra planejar, não pra navegar.
+
+$ dapraia --plan examples/plan.json --forecast-dir examples/forecast --day 2026-10-09
+Dá praia na sexta (09/10): Piratininga, das 6h às 9h. A maré baixa às 8h20 e o tempo está seco com pouco vento, deixando bastante espaço para jogar.
+
+$ dapraia fui "ventou bem mais do que dizia, umas rajadas chatas, e às 8h30 a areia já tava mole" --day 2026-10-07 --plan examples/plan.json
+(comparando com a escolha de 2026-10-07: Dá praia amanhã (qua 07/10): Piratininga, das 6h às 9h. A maré baixa às 7h10 e o vento está bem fraco, então o céu encoberto não atrapalha nada.)
+Mudaria assim:
+  vento até 15 km/h  →  vento até 12 km/h   ← "ventou bem mais do que dizia"
+  (nada)  →  rajadas até 14 km/h   ← "umas rajadas chatas"
+  até 2h antes ou depois da maré (padrão)  →  até 1h antes ou depois da maré   ← "às 8h30 a areia já tava mole"
+  (conta do código: 8h30 fica 1h20 depois da maré baixa das 7h10, então até 1h)
+Plano mantido.

@@ -1,0 +1,21 @@
+# Brazilian Navy (Marinha do Brasil, CHM), Tábuas das Marés 2026, 63rd edition.
+# Station: PORTO DO RIO DE JANEIRO - ILHA FISCAL (ESTADO DO RIO DE JANEIRO), 22°53.8'S 43°10'W.
+# Times in UTC-3 ("Fuso UTC -03.0 horas"), heights in metres above chart datum.
+# Source: https://assets.marinha.mil.br/chm/sites/www.marinha.mil.br.chm/files/dados_de_mare/40%20-%20PORTO%20DO%20RIO%20DE%20JANEIRO%20-%20I%20FISCAL%20-%20130%20-%20132.pdf
+date,time,kind,height_m
+2026-10-06,00:08,high,0.89
+2026-10-06,06:17,low,0.10
+2026-10-06,13:29,high,1.15
+2026-10-06,18:51,low,0.43
+2026-10-07,00:19,high,1.04
+2026-10-07,07:06,low,0.03
+2026-10-07,13:31,high,1.16
+2026-10-07,19:23,low,0.34
+2026-10-08,00:47,high,1.19
+2026-10-08,07:49,low,-0.00
+2026-10-08,13:36,high,1.19
+2026-10-08,19:57,low,0.26
+2026-10-09,01:17,high,1.30
+2026-10-09,08:25,low,0.02
+2026-10-09,13:57,high,1.22
+2026-10-09,20:27,low,0.21

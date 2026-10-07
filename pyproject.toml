@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dapraia"
+version = "0.1.0"
+description = "The hour to go outside tomorrow, from an open forecast and your own words, explained by Gemma on your own machine."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Vinicius Pereira" }]
+dependencies = []
+keywords = ["open-meteo", "ollama", "gemma", "tide", "beach", "weather", "outdoors"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+dapraia = "dapraia.cli:main"
+
+[tool.setuptools]
+packages = ["dapraia"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tests"]

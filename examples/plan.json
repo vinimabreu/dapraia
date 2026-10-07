@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "lang": "pt",
+  "text": "futevôlei de manhã cedo, pouco vento, sem chuva, e maré baixa pra areia ficar firme. Pelo menos 2 horas.",
+  "activity": "futevôlei",
+  "activity_quote": "futevôlei",
+  "spots": [
+    {
+      "name": "Piratininga",
+      "lat": -22.9553,
+      "lon": -43.0809
+    },
+    {
+      "name": "Itacoatiara",
+      "lat": -22.9749,
+      "lon": -43.032
+    }
+  ],
+  "rules": [
+    {
+      "field": "earliest_hour",
+      "value": 6,
+      "quote": "de manhã"
+    },
+    {
+      "field": "latest_hour",
+      "value": 9,
+      "quote": "cedo"
+    },
+    {
+      "field": "wind_max_kmh",
+      "value": 15,
+      "quote": "pouco vento"
+    },
+    {
+      "field": "rain_chance_max",
+      "value": 20,
+      "quote": "sem chuva"
+    },
+    {
+      "field": "tide",
+      "value": "low",
+      "quote": "maré baixa"
+    },
+    {
+      "field": "min_hours",
+      "value": 2,
+      "quote": "Pelo menos 2 horas"
+    }
+  ],
+  "unmapped": [
+    "pra areia ficar firme"
+  ],
+  "history": [],
+  "tide_shift_min": 60
+}

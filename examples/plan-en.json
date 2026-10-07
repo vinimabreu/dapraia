@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "lang": "en",
+  "text": "a long walk on the beach in the late afternoon, light wind, no rain, not too hot",
+  "activity": "long walk",
+  "activity_quote": "long walk",
+  "spots": [
+    {
+      "name": "Piratininga",
+      "lat": -22.9553,
+      "lon": -43.0809
+    }
+  ],
+  "rules": [
+    {
+      "field": "earliest_hour",
+      "value": 17,
+      "quote": "late afternoon"
+    },
+    {
+      "field": "latest_hour",
+      "value": 21,
+      "quote": "late afternoon"
+    },
+    {
+      "field": "wind_max_kmh",
+      "value": 15,
+      "quote": "light wind"
+    },
+    {
+      "field": "rain_chance_max",
+      "value": 20,
+      "quote": "no rain"
+    },
+    {
+      "field": "temp_max_c",
+      "value": 28,
+      "quote": "not too hot"
+    }
+  ],
+  "unmapped": [
+    "on the beach"
+  ],
+  "history": []
+}
